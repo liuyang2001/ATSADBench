@@ -3,6 +3,7 @@ import numpy as np
 from config import MULTI_VAR_COLUMNS  
 
 def get_RAG_rolling_windows(window_size,task_name):
+    
     file_path = "dataset/min_max_M-train_data.xlsx"
     df = pd.read_excel(file_path, usecols=MULTI_VAR_COLUMNS + ["Segment_Boundary"])
     is_multi_var = task_name.startswith("M-")
@@ -18,14 +19,17 @@ def get_RAG_rolling_windows(window_size,task_name):
                 windows.append(window)
                 i += 1  
             else:
+                
                 boundary_idx = np.where(segment_boundary == 1)[0]
                 if boundary_idx[-1] == window_size - 1:  
                     windows.append(window)
                     i += window_size  
                 else:
+                    
                     i += boundary_idx[0] + 1
         return windows
     else:
+
         windows_0 = []
         windows_1 = []
         i = 0
@@ -37,7 +41,7 @@ def get_RAG_rolling_windows(window_size,task_name):
             if 1 not in segment_boundary:
                 windows_0.append(q0_window)
                 windows_1.append(q1_window)
-                i += 1 
+                i += 1
             else:
                 boundary_idx = np.where(segment_boundary == 1)[0]
                 if boundary_idx[-1] == window_size - 1:  
