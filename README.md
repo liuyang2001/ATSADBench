@@ -2,6 +2,7 @@
 The appendix has been uploaded.
 
 How to reproduce the results in the paper:
+
 **Direct paradigm:**
 
 1. `cd direct`
