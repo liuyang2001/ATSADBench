@@ -1,7 +1,7 @@
 DATA_PATH = "dataset/"
 TEST_DATA_PATTERN = "_test_data.xlsx"
-NORMAL_DATA_FIRST_SIX = "M-train.xlsx"
-NORMAL_DATA_SEVENTH_NINE = "U-train.xlsx"
+NORMAL_DATA_FIRST_SIX = "M_train_data.xlsx"
+NORMAL_DATA_SEVENTH_NINE = "U_train_data.xlsx"
 MULTI_VAR_COLUMNS = ['Variable 1','Variable 2','Variable 3','Variable 4','Variable 5', 'Variable 6', 'Variable 7', 'Variable 8','Variable 9','Variable 10','Variable 11','Variable 12','Variable 13','Variable 14','Variable 15','Variable 16','Variable 17','Variable 18','Variable 19','Variable 20','Variable 21','Variable 22','Variable 23','Variable 24','Variable 25','Variable 26','Variable 27']
 SINGLE_VAR_COLUMN = ["Data"]
 WINDOW_SIZE = 500  

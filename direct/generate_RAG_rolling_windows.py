@@ -3,9 +3,9 @@ import numpy as np
 from config import MULTI_VAR_COLUMNS  
 
 def get_RAG_rolling_windows(window_size,task_name):
-    file_path = "dataset/train.xlsx"
+    file_path = "dataset/M-train_data.xlsx"
     df = pd.read_excel(file_path, usecols=MULTI_VAR_COLUMNS + ["Segment_Boundary"])
-    is_multi_var = task_name.startswith("Multi-")
+    is_multi_var = task_name.startswith("M-")
     if is_multi_var:
         data_values = df[MULTI_VAR_COLUMNS].values  
         i = 0
@@ -31,7 +31,7 @@ def get_RAG_rolling_windows(window_size,task_name):
         i = 0
         while i < len(df) - window_size + 1:
             q0_window = df["Variable 9"].values[i:i + window_size] if "Variable 9" in df.columns else np.zeros(window_size)
-            q1_window = df["Variable 17"].values[i:i + window_size] if "Variable 17" in df.columns else np.zeros(window_size)
+            q1_window = df["Variable 16"].values[i:i + window_size] if "Variable 16" in df.columns else np.zeros(window_size)
             segment_boundary = df["Segment_Boundary"].values[i:i + window_size]
             
             if 1 not in segment_boundary:

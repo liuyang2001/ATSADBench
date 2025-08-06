@@ -20,9 +20,9 @@ def reverse_scale(data, columns):
             reversed_data[col] = data[col]  
     return reversed_data
 if __name__ == "__main__":
-    file_path = "dataset/M-train.xlsx"
+    file_path = "dataset/M_train_data.xlsx"
     df = pd.read_excel(file_path, usecols=MULTI_VAR_COLUMNS+["Segment_Boundary"])
     normalized_df = minmax_normalize(df, MULTI_VAR_COLUMNS)
 
-    output_path = "dataset/min_max_M-train.xlsx"
+    output_path = "dataset/min_max_M_train_data.xlsx"
     normalized_df.to_excel(output_path, index=False)

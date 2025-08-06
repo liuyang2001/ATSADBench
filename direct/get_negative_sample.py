@@ -64,7 +64,7 @@ def get_negative_sample(task, column_names, WINDOW_SIZE, is_first_half, negative
                 }
                 dataset_idx = task_mapping[task][is_first_half]
                 data = pd.read_excel(xls, sheet_name=f"Negative_Dataset_{dataset_idx + 1}")
-                adjusted_columns = ['variable 17'] if is_first_half else ['variable 9']
+                adjusted_columns = ['variable 16'] if is_first_half else ['variable 9']
                 half_window = WINDOW_SIZE // 2
                 start_idx = 250  
                 if WINDOW_SIZE%2==0:
@@ -181,7 +181,7 @@ def get_negative_sample(task, column_names, WINDOW_SIZE, is_first_half, negative
                 dataset_indices = task_mapping[task][is_first_half]
                 data1 = pd.read_excel(xls, sheet_name=f"Negative_Dataset_{dataset_indices[0] + 1}")
                 data2 = pd.read_excel(xls, sheet_name=f"Negative_Dataset_{dataset_indices[1] + 1}")
-                adjusted_columns = ['variable 9'] if is_first_half else ['variable 17']
+                adjusted_columns = ['variable 9'] if is_first_half else ['variable 16']
                 half_window = WINDOW_SIZE // 2
                 start_idx = 250  
                 if WINDOW_SIZE%2==0:

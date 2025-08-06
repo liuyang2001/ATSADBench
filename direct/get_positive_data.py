@@ -24,7 +24,7 @@ def get_positive_data(task, column_names, WINDOW_SIZE, is_first_half):
                 if 6 <= dataset_idx <= 8:  
                     column_names = ["variable 9"]
                 elif 9 <= dataset_idx <= 11:  
-                    column_names = ["variable 17"]
+                    column_names = ["variable 16"]
             
             missing_columns = [col for col in column_names if col not in data.columns]
             if missing_columns:
