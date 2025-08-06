@@ -2,7 +2,7 @@
 
 *The appendix has been uploaded.*
 
-The dataset is stored in the `direct/dataset` and `prediction-based/dataset` folders. Details are provided in the `dataset_illustration.txt` file within each folder. Due to data confidentiality, the dataset is not directly included in the GitHub repository. If you require access to the ATSADBench dataset for academic research, please send an email to **[liuyang12339@163.com]**, stating your research needs. We will provide the dataset package upon request.
+The dataset should be stored in the `direct/dataset` and `prediction-based/dataset` folders. Details are provided in the `dataset_illustration.txt` file within each folder. Due to data confidentiality, the dataset is not directly included in the GitHub repository. If you require access to the ATSADBench dataset for academic research, please send an email to **[liuyang12339@163.com]**. We will provide the dataset package.
 
 
 ## How to Reproduce the Results
