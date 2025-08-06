@@ -11,8 +11,8 @@ ALPHA = 0.2
 BETA = 0.1         
 num_samples=1 # Do not need to repeat as we set temperature = 1
 # enhancement strategies
-POSITIVE_SAMPLE_NUMBER = 1
-NEGATIVE_SAMPLE_NUMBER = 3
+POSITIVE_SAMPLE_NUMBER = 0
+NEGATIVE_SAMPLE_NUMBER = 0
 RAG_NUMBER= 0
 MODEL_CONFIG = {
     "deepseek-chat": {"api_key": "", "endpoint": "https://api.deepseek.com/v1"}, 
