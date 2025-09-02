@@ -101,3 +101,22 @@ pip install -r requirement.txt
    Set `RAG_NUMBER=1` in `config.py`, then repeat steps 4, 5, and 6.
 
 ---
+
+### baseline
+
+For **GCAD**, run:
+
+   ```bash
+   bash GCAD.sh
+   ```
+
+For **Sub-Adjacent**, run:
+
+   ```bash
+   bash sub.sh
+   ```
+For **TFMAE**, run:
+
+   ```bash
+   bash TFMAE.sh
+   ```

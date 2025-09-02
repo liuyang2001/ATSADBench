@@ -58,9 +58,9 @@ def get_negative_sample(task, column_names, WINDOW_SIZE, is_first_half, negative
                 return sample, negative_analysis_process, negative_final_answer
             else:
                 task_mapping = {
-                    "Uni-CVAD": {True: 9, False: 6},  
-                    "Uni-CDAD": {True: 10, False: 7}, 
-                    "Uni-TVDAD": {True: 11, False: 8} 
+                    "U-FVA": {True: 9, False: 6},  
+                    "U-CDA": {True: 10, False: 7}, 
+                    "U-TVDA": {True: 11, False: 8} 
                 }
                 dataset_idx = task_mapping[task][is_first_half]
                 data = pd.read_excel(xls, sheet_name=f"Negative_Dataset_{dataset_idx + 1}")

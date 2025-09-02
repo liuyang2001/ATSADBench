@@ -75,7 +75,7 @@ def process_window(window_idx, window_dict, model_handler, task_name, model_name
     detect_anomalies(window_idx, prompt, model_handler, window_dict, task_name, model_name, is_multi_var)
 
 def main(task_name, model_name):
-    is_multi_var = task_name.startswith("Multi-")
+    is_multi_var = task_name.startswith("M-")
     task_idx = ["M-IL-FVA", "M-IL-CDA", "M-IL-TVDA", "M-OL-FVA", "M-OL-CDA", "M-OL-TVDA", "U-FVA", "U-CDA", "U-TVDA"].index(task_name)
     origin_df, df = load_data(task_name, is_multi_var)
     test_data_length = len(df)

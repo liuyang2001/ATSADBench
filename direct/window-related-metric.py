@@ -64,8 +64,8 @@ def process_files(task_dirs, file_type, is_multi=True):
         
         # Calculate latency
         latency_values = []
-        if is_multi:  # Multi-variable task
-            # For multi-variable task, find the first value in anomaly_indices that is > 99
+        if is_multi:  # M-variable task
+            # For M-variable task, find the first value in anomaly_indices that is > 99
             first_latency = next((i for i in anomaly_indices if i > 99), None)
             if first_latency is not None:
                 latency_values.append(first_latency - 99)
@@ -101,8 +101,8 @@ def process_files(task_dirs, file_type, is_multi=True):
                     max_count = max(max_count, current_count)
                     current_count = 1
             return max(max_count, current_count)
-        if is_multi:  # Multi-variable task
-            # For multi-variable tasks, find the longest consecutive segment in anomaly_indices between 100-199
+        if is_multi:  # M-variable task
+            # For M-variable tasks, find the longest consecutive segment in anomaly_indices between 100-199
             first_segment = [i for i in anomaly_indices if 100 <= i <= 199]
             second_segment = [i for i in anomaly_indices if 300 <= i <= 399]
 

@@ -38,12 +38,12 @@ Uni-FVA_500_test_data.xlsx
 Uni-FVA_750_test_data.xlsx
 Uni-FVA_1000_test_data.xlsx
 
-Uni-CDAD_test_data.xlsx
-Uni-CDAD_100_test_data.xlsx
-Uni-CDAD_250_test_data.xlsx
-Uni-CDAD_500_test_data.xlsx
-Uni-CDAD_750_test_data.xlsx
-Uni-CDAD_1000_test_data.xlsx
+U-CDA_test_data.xlsx
+U-CDA_100_test_data.xlsx
+U-CDA_250_test_data.xlsx
+U-CDA_500_test_data.xlsx
+U-CDA_750_test_data.xlsx
+U-CDA_1000_test_data.xlsx
 
 Uni-TVDA_test_data.xlsx
 Uni-TVDA_100_test_data.xlsx
