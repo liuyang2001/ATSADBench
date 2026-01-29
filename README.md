@@ -1,6 +1,13 @@
 # ATSADBench
 
-*The appendix has been uploaded.*
+Our benchmark is mainly intended to serve as a common evaluation reference for industry practitioners working on satellite anomaly detection who can access such data under confidentiality arrangements.
+
+If it is helpful for researchers who can not access such data under confidentiality arrangements, we can try to support you in alternative ways:
+
+We can request an internal review to see whether we may provide a very small, declassified subset (e.g., a limited portion from 1–2 tasks) for reference; and/or
+
+If you would like to evaluate specific methods on this benchmark, you may share your code (or a runnable package/container). We can run the evaluation on our side and share the resulting metrics and logs in a reproducible format.
+
 
 ## How to Reproduce the Results
 
